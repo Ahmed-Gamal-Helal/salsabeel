@@ -1,0 +1,109 @@
+footer {
+    // position: absolute;
+    // left: 0;
+    // bottom: 0;
+    // right: 0;
+    /* top: 0; */
+    // margin: 0 auto;
+    // height: 21em;
+}
+.cont-area {
+    background-color: #565656;
+    padding: 4em 0;
+    // margin-top: 3em;
+    .container {
+        .row {
+            form {
+                margin-top: 1em;
+                input {
+                    padding: .5em;
+                    border-radius: 2px;
+                }
+                button {
+                    padding: .5em 1em;
+                    background-color: $stColor;
+                    color: $white;
+                    margin-right: .5em;
+                    margin-top: 1em;
+                    border-radius: 2px;
+                }
+            }
+            .footer-cont-menu {
+                p {
+                    color: $white;
+                    font-size: 13px;
+                    line-height: 1.5;
+                }
+                .footer-title {
+                    height: 45px;
+                    position: relative;
+                    h3 {
+                        margin: 0;
+                        color: $white;
+                        position: relative;
+                        font-size: 18px;
+                        font-weight: bold;
+                    }
+                }
+                ul.list-unstyled {
+                    padding-right: 0;
+                    padding-left: initial;
+                    li {
+                        position: relative;
+                        margin-bottom: .75em;
+                        a {
+                            color: #fff;
+                            font-size: 13px;
+                            &:hover {
+                                color: #999;
+                            }
+                        }
+                    }
+                }
+                ul.mail-phone {
+                    li {
+                        width: 100%;
+                        position: relative;
+                        a {
+                            color: #e3e5eb;
+                            margin-right: 2em;
+                            font-family: $baseFont;
+                            &:hover {
+                                color: #999;
+                            }
+                        }
+                        &::before {
+                            display: inline-block;
+                            font: normal normal normal 14px/1 FontAwesome;
+                            content: '\f099';
+                            right: 0;
+                            position: absolute;
+                            color: $white;
+                            top: .3em;
+                            font-size: 1.1em;
+                        }
+                    }
+                    li:nth-child(2) {
+                        &::before {
+                        content: '\f16d';
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+@media (max-width:991px) {
+    .cont-area {
+        .container {
+            .row {
+                .footer-cont-menu { 
+                    .footer-title {
+                    margin: 30px 0 0 0;
+                    }
+                }
+            }
+        }
+    }
+}

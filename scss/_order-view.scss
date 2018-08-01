@@ -1,0 +1,50 @@
+.table-part, .companies, .who-we-are {
+    background: url(../images/016.png);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 10vh 0 15vh 0;
+}
+.table-part {
+    .details {
+        text-align: center;
+        background-color: $stColor;
+        color: $white;
+        font-size: 1.5em;
+        padding: .75em 0;
+    }
+    table {
+        width: 50%;
+        margin: auto;
+        tbody {
+            tr {
+                th, td {
+                    padding: 1em;
+                    font-weight: bold;
+                    font-size: 1.2em;
+                }
+            }
+        }
+    }
+}
+
+.pagination>li>a, .pagination>li>span {
+    border: none;
+    background-color: transparent;
+}
+
+@media (max-width:767px) {
+    .table-part {
+        table {
+            width: 90%;
+        }
+    }
+}
+@media (max-width:480px) {
+
+}
